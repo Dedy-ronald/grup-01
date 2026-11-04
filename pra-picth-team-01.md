@@ -40,3 +40,10 @@ Pertanyaan Diskusi: Apakah tindakan Budi etis? Mengalami transparansi proses leb
 
 Hasil Diskusi: A.Iya tindakan Budi etis, karena sifat transparansi dari Budi ke Mentor
                B.Transparansi proses lebih dihargai daripada hasil instan tanpa jejak karena kejujuran itu mahal dan dari situ juga kita belajar juga mengukur sejauh mana kemampuan kita.
+
+# Piagam Etika AI — Squad [Nama Squad]
+1. Kami berjanji tidak akan menyalin (copy-paste) teks dari AI tanpa membaca, memahami, dan memvalidasinya secara sadar.
+2. Kami akan selalu mencantumkan dan mendokumentasikan prompt penting yang kami gunakan dalam proses penyelesaian tugas tim.
+3. Jika AI memberikan data statistik atau fakta empiris, kami wajib melakukan verifikasi silang (cross-check) ke sumber primer.
+4. Kami menggunakan AI sebagai alat pemantik diskusi dan sparring partner, bukan pengganti proses berpikir anggota tim.
+5. Kami bertanggung jawab penuh 100% atas setiap dokumen, desain, dan kode yang kami serahkan ke mentor.
