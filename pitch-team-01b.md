@@ -107,3 +107,77 @@
 
     2. Prompt: "Kasih tahu data apa aja yang ada di warung kopi."
     3. Prompt: "Jelasin apa itu diagram alur."
+    hasil:
+    Diagram Alur (Flowchart)
+1. Apa yang dimaksud dengan diagram alur?
+Diagram alur atau Flowchart adalah sebuah gambaran yang menunjukkan langkah-langkah atau proses suatu kegiatan menggunakan simbol-simbol tertentu yang saling terhubung dengan garis panah.
+
+Sederhananya, diagram alur adalah peta yang menunjukkan urutan suatu pekerjaan dari awal sampai akhir.
+
+Diagram alur membantu kita memahami bagaimana sebuah proses berjalan tanpa harus membaca penjelasan yang panjang.
+
+Contoh sederhana:
+
+Ketika kita ingin membuat kopi, langkah-langkahnya adalah:
+1. Mulai.
+2. Siapkan gelas.
+3. Masukkan kopi dan gula.
+4. Tuangkan air panas.
+5. Aduk hingga rata.
+6. Kopi siap diminum.
+7. Selesai.
+Nah, urutan tersebut bisa digambarkan menggunakan diagram alur.
+2. Jenis-jenis simbol diagram alur
+Berikut adalah beberapa simbol yang paling sering digunakan dalam pembuatan flowchart.
+Nama Kategori	Contoh	Ilustrasi
+Terminator (Mulai/Selesai)	Digunakan untuk menandakan awal dan akhir sebuah proses. Contoh: Mulai dan Selesai.
+Process (Proses)	Menunjukkan suatu tindakan atau pekerjaan yang dilakukan. Contoh: Menghitung total harga.
+Input/Output	Digunakan untuk memasukkan atau menampilkan data. Contoh: Memasukkan nama atau menampilkan hasil.
+Decision (Keputusan)	Digunakan untuk menentukan pilihan berdasarkan kondisi tertentu, biasanya Ya atau Tidak. Contoh: Apakah nilai lulus?
+Flowline (Garis Alir)	Menunjukkan arah atau urutan jalannya proses dari satu simbol ke simbol lainnya.
+Connector (Penghubung)	Digunakan untuk menghubungkan alur yang terpisah agar diagram lebih mudah dibaca.
+Predefined Process (Proses Terdefinisi)	Menunjukkan proses yang sudah dibuat atau dijelaskan di bagian lain. Contoh: Memanggil fungsi menghitung diskon.
+Document (Dokumen)	Menunjukkan dokumen atau laporan yang dihasilkan. Contoh: Mencetak laporan transaksi.
+
+3. Contoh diagram alur dalam kehidupan sehari-hari
+Contoh: Proses menentukan apakah seseorang lulus atau tidak berdasarkan nilai ujian.
+MULAI
+
+Masukkan nilai ujian
+Apakah nilai ≥ 75?
+
+YA
+LULUS
+SELESAI
+
+TIDAK
+TIDAK LULUS
+SELESAI
+
+
+
+Penjelasannya:
+- Program dimulai.
+- Pengguna memasukkan nilai ujian.
+- Sistem memeriksa apakah nilai mencapai 75.
+- Jika Ya, hasilnya Lulus.
+- Jika Tidak, hasilnya Tidak Lulus.
+- Proses selesai.
+4. Apa manfaat diagram alur?
+1. Mempermudah pemahaman: Kita bisa memahami proses melalui gambar.
+2. Menyusun langkah kerja: Membantu mengatur urutan pekerjaan agar lebih terstruktur.
+3. Menemukan kesalahan: Memudahkan kita melihat bagian proses yang kurang tepat.
+4. Mempermudah komunikasi: Orang lain bisa memahami alur kerja tanpa penjelasan panjang.
+5. Membantu programmer: Menjadi gambaran awal sebelum membuat program menggunakan bahasa pemrograman.
+
+hasil prompt:
+[role]
+kamu adalah seorang mentor programmer internasional yang dikenal seluruh dunia 
+[konteks]
+saya adalah seorang pelajar yang akan mempresentasikan sebuah materi yang bertema diagram alur
+[instruksi]
+berikan saya penjelasan apa yang dimaksud dengan diagram alur
+[constraint]
+jelasin saya dengan bahasa yang mudah di pahami dan mudah dijelaskan kepada mahasiswa baru
+[output]
+sajikan dalam bentuk tabel markdown dengan kolom: Nama Kategori, Contoh , dan ilustrasi.
