@@ -182,12 +182,30 @@ jelasin saya dengan bahasa yang mudah di pahami dan mudah dijelaskan kepada maha
 [output]
 sajikan dalam bentuk tabel markdown dengan kolom: Nama Kategori, Contoh , dan ilustrasi.
 
-Tugas 2: "Rancang Prompt Few-Shot"
-Input: celana jogger hitam all size fit L bahan fleece tinggal 12 harga seratus sepuluh ribu
-Output:
-Nama Barang : Celana Jogger Hitam
-Kategori    : Bawahan
-Ukuran      : All Size (fit L)
-Bahan       : Fleece
-Stok        : 12 pcs
-Harga       : Rp110.000
+
+**Tugas 2: "Rancang Prompt Few-Shot"**
+Prompt:
+Ekstrak nama, kota asal, dan pekerjaan dari teks di bawah ini ke dalam format JSON. Ikuti contoh yang sudah ada.
+Teks: "Anis adalah seorang Investor yang berasal dari Jakarta, keahliannya adalah manajemen risiko dan diversifikasi modal."
+JSON:
+{
+"nama": "Anis",
+"asal_kota": "Jakarta",
+"pekerjaan": "Investor"
+}
+Teks: "Di Semarang, Anda bisa menemui Citra, seorang dokter gigi yang sangat ramah kepada semua pasiennya."
+JSON:
+{
+"nama": "Citra",
+"asal_kota": "Semarang",
+"pekerjaan": "Dokter Gigi"
+}
+Teks: "Sebagai fotografer pemula, Dahlan sering berkeliling kota Yogyakarta untuk mencari objek foto human interest yang menarik."
+JSON:
+
+Hasil:
+{
+  "nama": "Dahlan",
+  "asal_kota": "Yogyakarta",
+  "pekerjaan": "Fotografer"
+}
