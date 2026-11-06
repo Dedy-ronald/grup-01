@@ -181,3 +181,13 @@ berikan saya penjelasan apa yang dimaksud dengan diagram alur
 jelasin saya dengan bahasa yang mudah di pahami dan mudah dijelaskan kepada mahasiswa baru
 [output]
 sajikan dalam bentuk tabel markdown dengan kolom: Nama Kategori, Contoh , dan ilustrasi.
+
+Tugas 2: "Rancang Prompt Few-Shot"
+Input: celana jogger hitam all size fit L bahan fleece tinggal 12 harga seratus sepuluh ribu
+Output:
+Nama Barang : Celana Jogger Hitam
+Kategori    : Bawahan
+Ukuran      : All Size (fit L)
+Bahan       : Fleece
+Stok        : 12 pcs
+Harga       : Rp110.000
