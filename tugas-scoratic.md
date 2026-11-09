@@ -27,4 +27,14 @@ Singkatnya, Murphy Lawden adalah versi ekstrem, instan, dan versi fiksi ilmiah y
 
 ### Pairing Scoratic by Yazid
 ### Pairing Scoratic by Rafif
+Kesimpulan: Cara Kerja Mesin Memprediksi Kata pada LLM
+LLM (Large Language Model) merupakan teknologi kecerdasan buatan (AI) yang bekerja dengan mempelajari pola bahasa dan hubungan antarkata dari sejumlah besar data pelatihan. Dalam menghasilkan jawaban, LLM tidak sekadar mengambil atau menghafal kalimat yang pernah dibaca, tetapi menganalisis konteks dari kata-kata sebelumnya untuk memprediksi token berikutnya yang paling sesuai.
+
+Proses prediksi tersebut dilakukan dengan menghitung kemungkinan atau probabilitas dari beberapa token yang dapat muncul. Misalnya, ketika kita memberikan kalimat "Saya pergi ke sekolah menggunakan ...", AI akan mempertimbangkan berbagai kemungkinan kata, seperti sepeda, motor, atau mobil. AI kemudian memilih token berdasarkan pola dan konteks yang telah dipelajarinya.
+
+Dalam proses ini, LLM menggunakan teknologi Transformer yang memiliki mekanisme Attention. Mekanisme tersebut membantu AI memperhatikan hubungan antara kata-kata dalam sebuah kalimat sehingga dapat memahami bagian konteks yang paling relevan untuk menghasilkan prediksi.
+
+Selain itu, prompt atau instruksi yang diberikan pengguna juga berpengaruh terhadap hasil prediksi. Jika konteks atau susunan kata dalam prompt diubah, kemungkinan token yang dihasilkan juga dapat berubah. Oleh karena itu, memberikan prompt yang jelas dan memiliki konteks yang sesuai dapat membantu AI menghasilkan jawaban yang lebih relevan.
+
+Dari pembelajaran ini, dapat disimpulkan bahwa cara kerja LLM dalam memprediksi kata didasarkan pada pola bahasa, konteks, dan perhitungan probabilitas untuk menentukan token berikutnya. Proses tersebut berlangsung secara berulang hingga membentuk kalimat atau jawaban yang lengkap. Meskipun demikian, prediksi AI tidak selalu benar karena AI menghasilkan jawaban berdasarkan pola yang dipelajarinya, bukan berarti selalu memahami atau mengetahui kebenaran setiap informasi yang disampaikan.git
 ### Pairing Scoratic by Hanif
