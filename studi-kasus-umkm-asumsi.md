@@ -189,3 +189,144 @@ berikan saya saran untuk tempat lokasi agar bisa ramai dan bagaimana cara melaya
 gunakan bahasa spesifik dan mudah di pahami serta berikan lengkap beserta alasannya
 
 sajikan dalam bentuk tabel markdown
+
+# STUDI KASUS UMKM – KOPI SUSU GANG BUNTU
+
+## 1. Profil UMKM Percontohan
+
+**Nama UMKM:** Kopi Susu Gang Buntu
+
+**Jenis Usaha:** Kedai kopi gerobakan.
+
+**Lokasi:** Dekat lingkungan kampus.
+
+**Produk Utama:** Kopi susu, kopi hitam, dan minuman cokelat.
+
+**Target Konsumen:** Mahasiswa, pelajar, dan masyarakat sekitar kampus.
+
+**Sistem Penjualan:** Pembelian langsung di gerobak dan pemesanan melalui WhatsApp.
+
+**Keunggulan Usaha:**
+- Harga minuman terjangkau.
+- Rasa kopi cocok untuk anak muda.
+- Pelayanan ramah.
+- Lokasi dekat dengan kampus.
+
+**Data berikut merupakan asumsi untuk keperluan studi kasus [ASUMSI]:**
+- Harga kopi susu gula aren: Rp12.000 per gelas.
+- Harga kopi hitam: Rp8.000 per gelas.
+- Harga cokelat susu: Rp10.000 per gelas.
+- Jam operasional: 15.00–22.00 WIB.
+- Kapasitas penjualan: 30 gelas per hari.
+
+## 2. Teks Prompt Formula R-C-I-C-O
+
+Prompt yang digunakan oleh tim:
+
+**R (Role):**
+Kamu adalah seorang ahli pemasaran digital yang berpengalaman membantu UMKM kecil mempromosikan produk minuman.
+
+**C (Context):**
+Saya memiliki usaha bernama Kopi Susu Gang Buntu, yaitu kedai kopi gerobakan yang berada di dekat kampus. Target pelanggan adalah mahasiswa dan masyarakat sekitar. Produk yang dijual adalah kopi susu gula aren, kopi hitam, dan cokelat susu.
+
+**I (Instruction):**
+Buatkan tiga deskripsi produk katalog yang menarik, sederhana, dan menggugah selera. Selain itu, buatkan satu template pesan WhatsApp untuk membalas pelanggan yang melakukan pemesanan.
+
+**C (Constraints):**
+- Gunakan bahasa Indonesia yang santai dan ramah.
+- Sesuaikan dengan usaha kecil atau UMKM.
+- Jangan menggunakan klaim kesehatan yang belum terbukti.
+- Jangan menggunakan promosi atau diskon yang tidak tersedia.
+- Hindari bahasa yang terlalu berlebihan.
+- Gunakan harga sesuai data asumsi yang diberikan.
+
+**O (Output):**
+Hasilkan tiga deskripsi produk katalog dan satu template pesan WhatsApp untuk konfirmasi pesanan.
+
+## 3. Hasil Akhir
+
+### A. Deskripsi Produk Katalog
+
+**1. Kopi Susu Gula Aren**
+
+Nikmati perpaduan kopi yang nikmat dengan susu lembut dan manisnya gula aren. Cocok menemani waktu santai, mengerjakan tugas, maupun berkumpul bersama teman.
+
+Harga: Rp12.000/gelas [ASUMSI].
+
+**2. Kopi Hitam**
+
+Buat harimu lebih semangat dengan secangkir kopi hitam yang memiliki cita rasa kopi khas. Cocok untuk kamu yang menyukai rasa kopi sederhana dan nikmat.
+
+Harga: Rp8.000/gelas [ASUMSI].
+
+**3. Cokelat Susu**
+
+Untuk kamu yang tidak terlalu menyukai kopi, tersedia minuman cokelat susu dengan perpaduan rasa cokelat dan susu yang nikmat. Cocok diminum saat bersantai bersama teman.
+
+Harga: Rp10.000/gelas [ASUMSI].
+
+### B. Template Pesan Balasan WhatsApp
+
+**Konfirmasi Pesanan Pelanggan**
+
+Halo, Kak! 👋
+
+Terima kasih sudah memesan di Kopi Susu Gang Buntu.
+
+Berikut rincian pesanan Kakak:
+
+Nama: [Nama Pelanggan]
+
+Pesanan: [Nama Minuman]
+
+Jumlah: [Jumlah Pesanan]
+
+Total Harga: [Total Pembayaran]
+
+Metode Pengambilan: [Ambil Langsung]
+
+Pesanan Kakak sudah kami terima. Silakan tunggu konfirmasi dari kami mengenai kesiapan pesanan.
+
+Terima kasih sudah membeli di Kopi Susu Gang Buntu. Semoga suka dengan minumannya! ☕😊
+
+## 4. Catatan Kurasi Manusia
+
+Setelah memeriksa hasil yang diberikan AI, tim melakukan dua perbaikan terhadap informasi yang tidak sesuai dengan kondisi usaha.
+
+**Hal Aneh 1:**
+AI menyarankan penggunaan mesin kopi otomatis yang mahal dan kemasan botol premium untuk meningkatkan penjualan.
+
+**Alasan Dibuang:**
+Saran tersebut kurang sesuai dengan kondisi kedai kopi gerobakan yang memiliki modal terbatas. Usaha lebih baik menggunakan peralatan sederhana dan kemasan gelas yang terjangkau.
+
+**Hal Aneh 2:**
+AI membuat klaim bahwa kopi susu dapat meningkatkan kecerdasan dan menjamin mahasiswa mendapatkan nilai bagus.
+
+**Alasan Dibuang:**
+Klaim tersebut tidak memiliki bukti yang jelas dan dapat menyesatkan pelanggan. Oleh karena itu, tim menggantinya dengan kalimat promosi yang lebih wajar dan tidak berlebihan.
+
+## 5. Rencana Wawancara Nyata (Langkah 4)
+
+Untuk kegiatan Minggu 3, tim merencanakan wawancara dengan pemilik usaha kopi atau penjual minuman di sekitar lingkungan kampus.
+
+**Tujuan Wawancara:**
+Mengetahui kondisi usaha secara langsung agar hasil penggunaan AI sesuai dengan kebutuhan UMKM.
+
+**Pertanyaan Wawancara:**
+1. Sejak kapan usaha kopi ini mulai dijalankan?
+2. Apa saja jenis minuman yang dijual?
+3. Siapa target pelanggan utama?
+4. Berapa harga masing-masing produk?
+5. Bagaimana cara pelanggan melakukan pemesanan?
+6. Apakah pelanggan sering memesan melalui WhatsApp?
+7. Apa kendala yang sering dihadapi dalam menjalankan usaha?
+8. Apakah membutuhkan bantuan untuk membuat promosi produk?
+
+**Rencana Pelaksanaan:**
+- Mengunjungi penjual kopi di sekitar kampus.
+- Meminta izin untuk melakukan wawancara.
+- Mencatat jawaban pemilik usaha.
+- Mengambil dokumentasi jika diizinkan.
+- Menggunakan hasil wawancara untuk memperbaiki deskripsi produk dan template WhatsApp.
+
+**Catatan:** Kopi Susu Gang Buntu merupakan UMKM percontohan dalam tugas ini. Wawancara nyata harus dilakukan kepada pelaku UMKM yang benar-benar ada dan hasilnya dicatat sesuai jawaban narasumber.
