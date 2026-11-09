@@ -2,7 +2,7 @@
 
 Kesimpulan dari pairing scorastic yang dipelajari:
 
-Mengenal Murphy Lawden: Detektif Fiksi yang Bisa Menulis Ulang Takdir
+Mengenal Murphy Lawden: Detektif yang Bisa Mengubah Takdir Secara Paksa
 
 Bayangkan ada sebuah karakter fiksi yang kekuatannya bukan mengeluarkan laser atau tenaga dalam, melainkan memaksa dunia nyata berubah menjadi naskah film detektif hitam-putih.
 Karakter itu bernama Murphy Lawden (sering disebut Murphy Law), sebuah entitas anomali dari semesta cerita fiksi ilmiah SCP Foundation dengan kode SCP-3143. Dia digambarkan layaknya detektif klasik dari film noir tahun 1930-an. Penampilannya lengkap dengan jas panjang (trench coat), topi fedora, suara berat yang serak, dan pistol .44 Magnum. Di kalangan penggemar fiksi, dia dikenal memiliki salah satu kekuatan manipulasi realitas paling unik sekaligus paling berbahaya.
