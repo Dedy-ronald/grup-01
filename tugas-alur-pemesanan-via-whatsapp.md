@@ -20,4 +20,5 @@
 
 
 **2.Abstraksi dan Penulisan Pseudo Code"**
+
 **3.Stretch Goal: Algoritma Peringatan Stok Menipis"**
