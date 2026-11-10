@@ -38,3 +38,12 @@ Selain itu, prompt atau instruksi yang diberikan pengguna juga berpengaruh terha
 
 Dari pembelajaran ini, dapat disimpulkan bahwa cara kerja LLM dalam memprediksi kata didasarkan pada pola bahasa, konteks, dan perhitungan probabilitas untuk menentukan token berikutnya. Proses tersebut berlangsung secara berulang hingga membentuk kalimat atau jawaban yang lengkap. Meskipun demikian, prediksi AI tidak selalu benar karena AI menghasilkan jawaban berdasarkan pola yang dipelajarinya, bukan berarti selalu memahami atau mengetahui kebenaran setiap informasi yang disampaikan.git
 ### Pairing Scoratic by Hanif
+### Kesimpulan Pembelajaran Menggunakan Metode Socratic
+
+Berdasarkan pembelajaran menggunakan metode Socratic melalui studi kasus membuat secangkir kopi, saya memahami bahwa metode Socratic merupakan cara belajar dengan menggunakan pertanyaan dan jawaban secara bertahap. Dalam proses pembelajaran ini, saya tidak langsung diberikan jawaban, tetapi dibimbing melalui pertanyaan agar dapat berpikir, memahami, dan menemukan jawaban sendiri.
+
+Melalui contoh membuat secangkir kopi, saya belajar bahwa suatu pekerjaan yang terlihat sederhana sebenarnya memiliki beberapa tahapan yang dapat dibagi menjadi bagian-bagian kecil. Mulai dari menyiapkan gelas, mengambil kopi dan gula, memanaskan air, menuangkan air panas, hingga mengaduk kopi sampai siap diminum.
+
+Dari proses tanya jawab tersebut, saya menjadi lebih memahami konsep Dekomposisi Masalah, yaitu teknik memecah suatu masalah besar menjadi beberapa masalah kecil agar lebih mudah dikerjakan dan diselesaikan. Saya juga belajar untuk tidak terburu-buru mencari jawaban, tetapi mencoba memahami permasalahan terlebih dahulu melalui proses berpikir.
+
+Kesimpulannya, metode Socratic membantu saya belajar lebih aktif, melatih kemampuan berpikir kritis, dan memahami materi melalui pertanyaan serta jawaban dengan bahasa dan pemahaman saya sendiri.
