@@ -174,3 +174,48 @@ Produk Indomie dan gula tidak masuk daftar peringatan karena jumlah stoknya masi
 Dari tugas ini, saya belajar bahwa abstraksi digunakan untuk memilih data penting dan mengabaikan informasi yang tidak diperlukan. Pseudocode digunakan untuk menyusun langkah-langkah penyelesaian masalah sebelum dibuat menjadi program komputer. Selain itu, saya juga belajar menggunakan percabangan untuk menentukan diskon dan ongkos kirim, serta perulangan untuk memeriksa persediaan barang di warung.
 
 Ketiga nomor sudah dikerjakan, termasuk contoh perhitungan dan hasil algoritmanya.
+
+## Tahap 3: Uji Coba Manual / Dry Run Table (15 Menit)
+Berikut pengujian pseudocode Diskon & Ongkir dengan 3 skenario. Aturan yang diuji: diskon 10% jika belanja ≥ Rp100.000 (maksimal Rp20.000), ongkir gratis jika jarak ≤ 3 km, selebihnya Rp2.500 per km kelebihan.
+
+**Skenario 1: Belanja kecil, jarak dekat (tidak ada diskon, ongkir gratis)**
+
+Input: total_belanja = 50.000, jarak_km = 2
+
+| Langkah | Hasil |
+|---|---|
+| 50.000 >= 100.000? | Salah → diskon = 0 |
+| 2 <= 3? | Benar → ongkir = 0 |
+| total_akhir | 50.000 − 0 + 0 = **Rp50.000** |
+
+**Skenario 2: Belanja sedang, jarak jauh (diskon 10% di bawah batas maksimal, ongkir berbayar)**
+
+Input: total_belanja = 150.000, jarak_km = 7
+
+| Langkah | Hasil |
+|---|---|
+| 150.000 >= 100.000? | Benar → diskon = 150.000 × 10 / 100 = 15.000 |
+| 15.000 > 20.000? | Salah → diskon tetap 15.000 |
+| 7 <= 3? | Salah → ongkir = (7 − 3) × 2.500 = 10.000 |
+| total_akhir | 150.000 − 15.000 + 10.000 = **Rp145.000** |
+
+**Skenario 3: Belanja besar, jarak tepat di batas (diskon dibatasi maksimal, ongkir gratis)**
+
+Input: total_belanja = 300.000, jarak_km = 3
+
+| Langkah | Hasil |
+|---|---|
+| 300.000 >= 100.000? | Benar → diskon = 30.000 |
+| 30.000 > 20.000? | Benar → diskon dibatasi menjadi 20.000 |
+| 3 <= 3? | Benar → ongkir = 0 |
+| total_akhir | 300.000 − 20.000 + 0 = **Rp280.000** |
+
+**Ringkasan**
+
+| Skenario | Fokus yang diuji | Diskon | Ongkir | Total akhir |
+|---|---|---|---|---|
+| 1 | Di bawah syarat diskon, jarak dekat | 0 | 0 | Rp50.000 |
+| 2 | Diskon normal, ongkir berbayar | 15.000 | 10.000 | Rp145.000 |
+| 3 | Plafon diskon, jarak batas | 20.000 | 0 | Rp280.000 |
+
+**Kesimpulan:** Ketiga skenario menghasilkan nilai yang sesuai dengan aturan, sehingga tidak ditemukan bug logika. Skenario ini mencakup cabang diskon tidak berlaku, diskon normal, dan diskon yang dibatasi plafon, serta cabang ongkir gratis dan ongkir berbayar. Skenario 3 sekaligus menguji batas jarak tepat 3 km (operator `<=`).
