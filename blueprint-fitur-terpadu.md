@@ -16,11 +16,11 @@
 ## 3. Diagram Flowchart (Mermaid)
 ## 4. Potongan ERD (Mermaid)
  
- MERCHANT ||--o{ PRODUK : memiliki
+''' MERCHANT ||--o{ PRODUK : memiliki
     KATEGORI ||--o{ PRODUK : mengelompokkan
     MERCHANT ||--o{ PESANAN : menerima
     PESANAN ||--|{ ITEM_PESANAN : memuat
-    PRODUK ||--o{ ITEM_PESANAN : tercatat_dalam
+    PRODUK ||--o{ ITEM_PESANAN : tercatat_dalam'''
 
     MERCHANT {
         string id_merchant PK
