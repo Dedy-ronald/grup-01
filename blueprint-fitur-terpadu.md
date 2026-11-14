@@ -15,6 +15,7 @@
 ## 2. Pseudocode Lengkap
 ## 3. Diagram Flowchart (Mermaid)
 ## 4. Potongan ERD (Mermaid)
+ 
  MERCHANT ||--o{ PRODUK : memiliki
     KATEGORI ||--o{ PRODUK : mengelompokkan
     MERCHANT ||--o{ PESANAN : menerima
