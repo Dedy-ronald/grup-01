@@ -88,7 +88,7 @@ flowchart TD
     D -- No --> F[Periksa stok setiap item_pesanan]
     F --> G{Semua item: produk.stok >= item_pesanan.jumlah?}
 
-    G -- No --> H[Status_Pesanan = "Batal"]
+    G -- No --> [Status_Pesanan = "Batal"]
     H --> I([Output: Gagal konfirmasi, Stok Produk Tidak Mencukupi])
     I --> Z
 
