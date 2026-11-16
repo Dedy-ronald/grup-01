@@ -63,3 +63,21 @@ MERCHANT ||--o{ PRODUK : memiliki
     }
 
 ## 5. Tabel Audit Konsistensi Silang
+
+Tabel ini digunakan untuk memeriksa apakah Pseudocode, Flowchart, dan ERD sudah saling sesuai.
+
+### **1. Tabel Audit Konsistensi**
+
+Berikut format tabel yang bisa dimasukkan ke file `blueprint-fitur-terpadu.md`.
+
+| No. | Komponen yang Dicek     | Pseudocode                                      | Flowchart                                      | ERD                                                                    | Status |
+| --- | ----------------------- | ----------------------------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------- | ------ |
+| 1   | Kondisi pertama         | Kondisi `JIKA` sudah dituliskan                 | Sudah memiliki simbol belah ketupat (Decision) | Variabel kondisi tersedia sebagai atribut jika disimpan dalam database | Sesuai |
+| 2   | Kondisi kedua           | Kondisi `JIKA` sudah dituliskan                 | Sudah memiliki simbol belah ketupat (Decision) | Variabel kondisi tersedia sebagai atribut jika disimpan dalam database | Sesuai |
+| 3   | Variabel input          | Variabel sudah digunakan dalam pseudocode       | Variabel digunakan dalam alur proses           | Nama atribut tersedia di ERD                                           | Sesuai |
+| 4   | Variabel perubahan data | Variabel sudah diperbarui menggunakan `SET`     | Terdapat proses perubahan data                 | Kolom atribut tersedia di ERD                                          | Sesuai |
+| 5   | Hasil proses            | Output sudah dituliskan menggunakan `TAMPILKAN` | Terdapat simbol output                         | Data hasil proses sesuai dengan atribut ERD jika disimpan              | Sesuai |
+
+### **2. Kesimpulan Audit**
+
+Berdasarkan tabel audit konsistensi, setiap kondisi pada pseudocode harus memiliki percabangan yang sesuai pada flowchart. Selain itu, setiap variabel yang digunakan atau mengalami perubahan harus diperiksa kesesuaiannya dengan atribut pada ERD apabila variabel tersebut merupakan data yang disimpan dalam database.
