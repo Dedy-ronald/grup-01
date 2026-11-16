@@ -13,7 +13,126 @@
 ---
 
 ## 2. Pseudocode Lengkap
+
+    ALGORITMA KonfirmasiPesananMerchant
+
+    DEKLARASI
+    id_pesanan        : integer
+    pesanan           : record {id_pesanan, status_pesanan, daftar_item}
+    item_pesanan      : record {id_produk, jumlah}
+    produk            : record {id_produk, stok}
+    stok_cukup        : boolean
+    pesan             : string
+
+    DESKRIPSI
+    { --- Langkah 1: Merchant memilih pesanan --- }
+    INPUT(id_pesanan)
+    pesanan <- AMBIL_PESANAN(id_pesanan)
+
+    { --- Langkah 2: Validasi status pesanan --- }
+    IF pesanan.status_pesanan != "Diteruskan ke WA" THEN
+        OUTPUT("Pesanan ini sudah diproses sebelumnya")
+        STOP
+    END IF
+
+    { --- Langkah 3: Cek ketersediaan stok semua item --- }
+    stok_cukup <- TRUE
+    FOR EACH item_pesanan IN pesanan.daftar_item DO
+        produk <- AMBIL_PRODUK(item_pesanan.id_produk)
+        IF produk.stok < item_pesanan.jumlah THEN
+            stok_cukup <- FALSE
+            BREAK
+        END IF
+    END FOR
+
+    { --- Langkah 4: Stok tidak mencukupi --- }
+    IF stok_cukup = FALSE THEN
+        pesanan.status_pesanan <- "Batal"
+        SIMPAN(pesanan)
+        OUTPUT("Gagal konfirmasi: Stok produk tidak mencukupi")
+        STOP
+    END IF
+
+    { --- Langkah 5: Stok mencukupi --- }
+    MULAI_TRANSAKSI
+    FOR EACH item_pesanan IN pesanan.daftar_item DO
+        produk <- AMBIL_PRODUK(item_pesanan.id_produk)
+        produk.stok <- produk.stok - item_pesanan.jumlah
+        SIMPAN(produk)
+    END FOR
+    pesanan.status_pesanan <- "Dikonfirmasi Penjual"
+    SIMPAN(pesanan)
+    COMMIT_TRANSAKSI
+
+    OUTPUT("Pesanan berhasil dikonfirmasi")
+    SELESAI
 ## 3. Diagram Flowchart (Mermaid)
+
+    
+# Flowchart Proses Konfirmasi Pesanan Merchant
+
+## Deskripsi
+Flowchart ini menjelaskan proses merchant dalam menerima dan mengonfirmasi pesanan, memeriksa stok produk, memperbarui stok, serta menyimpan transaksi.
+
+## Diagram Alur
+
+```mermaid
+flowchart TD
+    A([Mulai]) --> B[/Input id_pesanan oleh Merchant/]
+    B --> C[Ambil data pesanan]
+    C --> D{status_pesanan = "Diteruskan ke WA"?}
+
+    D -- Yes --> E([Output: Pesanan ini Sudah Diproses Sebelumnya])
+    E --> Z([End])
+
+    D -- No --> F[Periksa stok setiap item_pesanan]
+    F --> G{Semua item: produk.stok >= item_pesanan.jumlah?}
+
+    G -- No --> H[Status_Pesanan = "Batal"]
+    H --> I([Output: Gagal konfirmasi, Stok Produk Tidak Mencukupi])
+    I --> Z
+
+    G -- Yes --> J[Mulai Transaksi]
+    J --> K[Kurangi Produk.Stok sebanyak item_pesanan.Jumlah untuk setiap item]
+    K --> L[Status_Pesanan = "Dikonfirmasi Penjual"]
+    L --> M[Simpan Data dan Commit Transaksi]
+    M --> N([Output: Pesanan Berhasil Dikonfirmasi])
+    N --> Z
+```
+
+## Penjelasan Proses
+
+  1. **Input ID Pesanan**
+    Merchant memasukkan `id_pesanan`.
+
+  2. **Ambil Data Pesanan**
+   Sistem mengambil data pesanan berdasarkan ID yang dimasukkan.
+
+3. **Periksa Status Pesanan**
+   Sistem memeriksa apakah `status_pesanan` bernilai `"Diteruskan ke WA"`.
+   - Yes: Sistem menampilkan pesan bahwa pesanan sudah diproses sebelumnya.
+   - No: Sistem melanjutkan pemeriksaan stok setiap item pesanan.
+
+4. **Periksa Stok Produk**
+   Sistem memastikan stok setiap produk mencukupi jumlah yang dipesan.
+   - No: Status pesanan diubah menjadi `"Batal"` dan sistem menampilkan pesan bahwa stok produk tidak mencukupi.
+   - Yes: Sistem memulai transaksi.
+
+5. **Kurangi Stok Produk**
+   Sistem mengurangi stok setiap produk sesuai jumlah yang dipesan.
+
+6. **Konfirmasi Pesanan**
+   Status pesanan diubah menjadi `"Dikonfirmasi Penjual"`.
+
+7. **Simpan Data dan Commit Transaksi**
+   Sistem menyimpan perubahan data dan melakukan commit transaksi.
+
+8. **Output Berhasil**
+   Sistem menampilkan pesan bahwa pesanan berhasil dikonfirmasi.
+
+## Catatan
+Dokumen ini disusun berdasarkan alur pada PDF yang diberikan.
+
 ## 4. Potongan ERD (Mermaid)
  
 MERCHANT ||--o{ PRODUK : memiliki
