@@ -64,6 +64,7 @@ MERCHANT ||--o{ PRODUK : memiliki
     
 
 ## **5. Tabel Audit Konsistensi Silang**
+Berikut **Tabel Audit Konsistensi Silang** berdasarkan ERD yang kamu kirimkan. Karena ERD tersebut memiliki entitas MERCHANT, KATEGORI, PRODUK, PESANAN, dan ITEM_PESANAN, tabel audit ini disesuaikan dengan proses pemesanan produk pada sistem katalog UMKM.
 
 | No. | Variabel / Kondisi yang Dicek | Pseudocode                              | Flowchart                                                         | ERD (Atribut)                                  | Status |
 | --- | ----------------------------- | --------------------------------------- | ----------------------------------------------------------------- | ---------------------------------------------- | ------ |
