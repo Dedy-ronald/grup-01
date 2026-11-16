@@ -61,23 +61,22 @@ MERCHANT ||--o{ PRODUK : memiliki
         int harga_satuan
         int subtotal
     }
+    
 
-## 5. Tabel Audit Konsistensi Silang
+## **5. Tabel Audit Konsistensi Silang**
 
-Tabel ini digunakan untuk memeriksa apakah Pseudocode, Flowchart, dan ERD sudah saling sesuai.
+| No. | Variabel / Kondisi yang Dicek | Pseudocode                              | Flowchart                                                         | ERD (Atribut)                                  | Status |
+| --- | ----------------------------- | --------------------------------------- | ----------------------------------------------------------------- | ---------------------------------------------- | ------ |
+| 1   | Mengecek stok produk          | `JIKA stok >= jumlah_beli`              | Menggunakan simbol belah ketupat untuk mengecek ketersediaan stok | `PRODUK.stok` dan `ITEM_PESANAN.jumlah_beli`   | Sesuai |
+| 2   | Mengecek jumlah pembelian     | `jumlah_beli` diinput oleh pembeli      | Terdapat proses memasukkan jumlah produk                          | `ITEM_PESANAN.jumlah_beli`                     | Sesuai |
+| 3   | Menghitung harga satuan       | Mengambil harga produk                  | Terdapat proses mengambil harga produk                            | `PRODUK.harga` dan `ITEM_PESANAN.harga_satuan` | Sesuai |
+| 4   | Menghitung subtotal           | `subtotal = jumlah_beli * harga_satuan` | Terdapat proses perhitungan subtotal                              | `ITEM_PESANAN.subtotal`                        | Sesuai |
+| 5   | Menghitung total pembayaran   | `total_bayar = jumlah seluruh subtotal` | Terdapat proses menghitung total pembayaran                       | `PESANAN.total_bayar`                          | Sesuai |
+| 6   | Mengecek status pesanan       | `JIKA status_pesanan = "Diproses"`      | Menggunakan simbol belah ketupat untuk mengecek status pesanan    | `PESANAN.status_pesanan`                       | Sesuai |
 
-### **1. Tabel Audit Konsistensi**
+## **Kesimpulan**
 
-Berikut format tabel yang bisa dimasukkan ke file `blueprint-fitur-terpadu.md`.
+Berdasarkan tabel audit konsistensi silang, variabel yang digunakan dalam proses pemesanan produk sudah memiliki pasangan atribut pada ERD. Setiap kondisi pada pseudocode juga perlu digambarkan menggunakan simbol keputusan (belah ketupat) pada flowchart.
 
-| No. | Komponen yang Dicek     | Pseudocode                                      | Flowchart                                      | ERD                                                                    | Status |
-| --- | ----------------------- | ----------------------------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------- | ------ |
-| 1   | Kondisi pertama         | Kondisi `JIKA` sudah dituliskan                 | Sudah memiliki simbol belah ketupat (Decision) | Variabel kondisi tersedia sebagai atribut jika disimpan dalam database | Sesuai |
-| 2   | Kondisi kedua           | Kondisi `JIKA` sudah dituliskan                 | Sudah memiliki simbol belah ketupat (Decision) | Variabel kondisi tersedia sebagai atribut jika disimpan dalam database | Sesuai |
-| 3   | Variabel input          | Variabel sudah digunakan dalam pseudocode       | Variabel digunakan dalam alur proses           | Nama atribut tersedia di ERD                                           | Sesuai |
-| 4   | Variabel perubahan data | Variabel sudah diperbarui menggunakan `SET`     | Terdapat proses perubahan data                 | Kolom atribut tersedia di ERD                                          | Sesuai |
-| 5   | Hasil proses            | Output sudah dituliskan menggunakan `TAMPILKAN` | Terdapat simbol output                         | Data hasil proses sesuai dengan atribut ERD jika disimpan              | Sesuai |
+Dengan demikian, pseudocode, flowchart, dan ERD memiliki hubungan yang saling mendukung dalam menggambarkan alur sistem pemesanan produk UMKM.
 
-### **2. Kesimpulan Audit**
-
-Berdasarkan tabel audit konsistensi, setiap kondisi pada pseudocode harus memiliki percabangan yang sesuai pada flowchart. Selain itu, setiap variabel yang digunakan atau mengalami perubahan harus diperiksa kesesuaiannya dengan atribut pada ERD apabila variabel tersebut merupakan data yang disimpan dalam database.
