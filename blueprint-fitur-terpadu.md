@@ -80,7 +80,7 @@ Flowchart ini menjelaskan proses merchant dalam menerima dan mengonfirmasi pesan
 flowchart TD
     A([Mulai]) --> B[/Input id_pesanan oleh Merchant/]
     B --> C[Ambil data pesanan]
-    C --> D{status_pesanan = "Diteruskan ke WA"?}
+    C --> D{status_pesanan = Diteruskan ke WA?}
 
     D -- Yes --> E([Output: Pesanan ini Sudah Diproses Sebelumnya])
     E --> Z([End])
