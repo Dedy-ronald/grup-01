@@ -1,6 +1,6 @@
 # Tugas Mandiri 01d – Kurasi Deskripsi Produk
 
-**Nama:** [Isi Nama Kamu]  
+**Nama:** [Hanif]  
 **Produk:** Nasi Goreng
 
 ## 1. Deskripsi Awal Saya
