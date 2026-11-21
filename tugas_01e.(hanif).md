@@ -1,6 +1,6 @@
 # Tugas Mandiri 01e – Log Belajar Socratic Mandiri
 
-**Nama:** [Nama Kamu]
+**Nama:** [Hanif]
 
 **Topik:** Pentingnya Batasan (Constraint) pada Instruksi AI
 
