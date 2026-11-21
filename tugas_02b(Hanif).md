@@ -1,3 +1,7 @@
+# Tugas Mandiri 02b — Jembatan Kode: Fungsi Diskon & Ongkir
+Nama: [Hanif]
+
+## 1. Kode JavaScript Sederhana:
 function hitungTotalBayar(totalBelanja, jarakKm) {
     // 1. Menghitung diskon
     let diskon = 0;
